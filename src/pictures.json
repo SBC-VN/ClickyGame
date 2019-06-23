@@ -17,7 +17,7 @@
   {
     "id": 4,
     "name": "Zener Tick",
-    "image": "https://fsmedia.imgix.net/fd/5e/e1/0b/8549/41ce/989d/dd47f6532210/amazons-the-tickjpg.jpeg?rect=0%2C126%2C1500%2C748&auto=format%2Ccompress&dpr=2&w=650",
+    "image": "https://fsmedia.imgix.net/fd/5e/e1/0b/8549/41ce/989d/dd47f6532210/amazons-the-tickjpg.jpeg?rect=0%2C126%2C1500%2C748&auto=format%2Ccompress&dpr=2&w=650"
   },
   {
     "id": 5,
@@ -41,30 +41,27 @@
   },
   {
     "id": 9,
-    "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-    "occupation": "Adventurer",
-    "location": "California"
+    "name": "Zener Cage",
+    "image": "https://www.rollingstone.com/wp-content/uploads/2018/10/TCDLUCA_EC002.jpg"
   },
   {
     "id": 10,
-    "name": "Rocko",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-    "occupation": "Cashier",
-    "location": "O-Town, California"
+    "name": "Zener goat",
+    "image": "https://pics.me.me/the-mythical-goaticorn-43813571.png"
   },
   {
     "id": 11,
-    "name": "Captain Planet",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
-    "occupation": "Superhero",
-    "location": "Earth"
+    "name": "Zener Hulk",
+    "image": "https://img-9gag-fun.9cache.com/photo/5722757_700bwp.webp"
   },
   {
     "id": 12,
-    "name": "Ickis",
-    "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-    "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump"
+    "name": "Zener SpiderCat",
+    "image": "https://i.ytimg.com/vi/mS70NG6TfrY/maxresdefault.jpg"
+  },
+  {
+    "id" : 13,
+    "name": "Zener pig",
+    "image" : "http://www.costumepop.com/wp-content/uploads/2009/08/Pig-Cat-Costume.jpg"
   }
 ]
