@@ -12,14 +12,18 @@ class App extends Component {
   };
 
   cardClicked = id => {
+    console.log("Card clicked",id);
+    console.log("state",this.state.clicked);
     if (this.state.clicked.includes(id)) {
       // Clicked on a card that was previously clicked.  Game over.
+      console.log("Already clicked, game over");
       this.setState({ clicked : [], 
                       showModal : true, 
                       modalMessage : "You already clicked that card.  Game over."
       });
     }
     else {
+      console.log("new click!");
       let newClicked = this.state.clicked;
       newClicked.push(id);
       this.setState({ clicked : newClicked, 
@@ -46,17 +50,19 @@ class App extends Component {
       <div>
         <Modal
         className="modal"
-        show={this.state.isShowing}
+        show={this.state.showModal}
         close={this.closeModalHandler}>
-            this.state.modalMessage
+            {this.state.modalMessage}
         </Modal>
 
         {pictures.map(picture => (
             <PicCard
+              key={picture.id}
               id={picture.id}
               name={picture.name}
               image={picture.image}
               cardClick={this.cardClicked}
+              show={!this.state.showModal}
             />
         ))}
       </div>

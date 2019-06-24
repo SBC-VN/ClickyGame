@@ -2,11 +2,13 @@ import React from "react";
 import "./style.css";
 
 function PicCard(props) {
+  console.log("clicker",props.cardClick);
   return (
-      <div className="img-container">
-        <img alt={props.name} src={props.image} 
-             onClick={() => props.cardClick(props.id)}/>
+      props.show ?
+      <div className="img-container" onClick={() => props.cardClick(props.id)}>
+        <img alt={props.name} src={props.image} />
       </div>
+      : <span></span>
   );
 }
 

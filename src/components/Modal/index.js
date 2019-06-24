@@ -3,8 +3,11 @@ import React from 'react';
 import './style.css';
 
 const Modal = (props) => {
+    console.log("Modal show",props.show);
     return (
+        props.show ?
         <div>
+            {console.log("show")}
             <div className="modal-wrapper"
                 style={{
                     transform: props.show ? 'translateY(0vh)' : 'translateY(-100vh)',
@@ -24,7 +27,8 @@ const Modal = (props) => {
                     <button className="btn-continue">CONTINUE</button>
                 </div>
             </div>
-        </div>
+        </div> 
+        : <span></span>
     )
 }
 

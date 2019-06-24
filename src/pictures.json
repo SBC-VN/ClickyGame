@@ -1,67 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Zener Star",
-    "image": "https://www.pinclipart.com/picdir/big/108-1088697_zener-cards-clipart.png"
-  },
+    "name": "Conan",
+    "image": "https://m.media-amazon.com/images/M/MV5BNzM2NmUwNTgtNzVkYS00OTk0LTllMWMtYjJmYTMyMGZjNzk3XkEyXkFqcGdeQXVyNjA4NjI3NzM@._V1_SY1000_CR0,0,759,1000_AL_.jpg"
+    },
   {
     "id": 2,
-    "name": "Zener Dog",
+    "name": "Dog",
     "image": "https://i.etsystatic.com/12510641/r/il/73591a/1867759069/il_fullxfull.1867759069_pgz7.jpg"
   },
   {
     "id": 3,
-    "name": "Zener Snake",
+    "name": "Snake",
     "image": "https://img1.grunge.com/img/gallery/the-truth-about-why-there-arent-snakes-in-ireland/intro-1547479326.jpg"
   },
   {
     "id": 4,
-    "name": "Zener Tick",
+    "name": "Tick",
     "image": "https://fsmedia.imgix.net/fd/5e/e1/0b/8549/41ce/989d/dd47f6532210/amazons-the-tickjpg.jpeg?rect=0%2C126%2C1500%2C748&auto=format%2Ccompress&dpr=2&w=650"
   },
   {
     "id": 5,
-    "name": "Zener Man",
+    "name": "Man",
     "image": "https://filmforum.org/do-not-enter-or-modify-or-erase/client-uploads/ffjr/_1000w/SUPERMAN2050.jpg"
   },
   {
     "id": 6,
-    "name": "Zener Rock",
+    "name": "Rock",
     "image": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/04/dwayne-johnson-black-adam-600x316.jpg"
   },
   {
     "id": 7,
-    "name": "Zener Woman",
+    "name": "Woman",
     "image": "https://cdn.vox-cdn.com/thumbor/FlVDTKsRqF84r4TI2w0N2z4Xnqc=/0x0:846x346/1200x800/filters:focal(365x46:499x180)/cdn.vox-cdn.com/uploads/chorus_image/image/55091987/Screenshot_2016-11-03_12.07.41.0.0.png"
   },
   {
     "id": 8,
-    "name": "Zener Super",
+    "name": "Super",
     "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2019/01/Supergirl.jpg"
   },
   {
     "id": 9,
-    "name": "Zener Cage",
+    "name": "Cage",
     "image": "https://www.rollingstone.com/wp-content/uploads/2018/10/TCDLUCA_EC002.jpg"
   },
   {
     "id": 10,
-    "name": "Zener goat",
+    "name": "goat",
     "image": "https://pics.me.me/the-mythical-goaticorn-43813571.png"
   },
   {
     "id": 11,
-    "name": "Zener Hulk",
+    "name": "Hulk",
     "image": "https://img-9gag-fun.9cache.com/photo/5722757_700bwp.webp"
   },
   {
     "id": 12,
-    "name": "Zener SpiderCat",
+    "name": "SpiderCat",
     "image": "https://i.ytimg.com/vi/mS70NG6TfrY/maxresdefault.jpg"
   },
   {
     "id" : 13,
-    "name": "Zener pig",
+    "name": "cat pig",
     "image" : "http://www.costumepop.com/wp-content/uploads/2009/08/Pig-Cat-Costume.jpg"
+  },
+  {
+    "id" : 14,
+    "name" : "garden pig",
+    "image" : "https://img3.junaroad.com/uiproducts/15440882/zoom_0-1535361220.jpg"
+  },
+  {
+    "id" : 15,
+    "name" : "dark helmet",
+    "image" : "https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/593abdc7e58c624ed5e1e39b/1497021897843/?format=2500w"
+  },
+  {
+    "id" : 16,
+    "name" : "darth vader",
+    "image" : "https://cdn.vox-cdn.com/thumbor/y_9RHqBLRrbxlLZ33LTQKaHg8hk=/0x27:775x608/1200x800/filters:focal(0x27:775x608)/cdn.vox-cdn.com/uploads/chorus_image/image/46430232/MV5BMTA0MDY5OTYzMzVeQTJeQWpwZ15BbWU3MDcyMjEyMjM_._V1__SX1394_SY650_.0.0.jpg"
+  },
+  {
+    "id" : 18,
+    "name" : "doge",
+    "image" : "https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+  },
+  {
+    "id" : 19,
+    "name" : "Aquanamor",
+    "image" : "https://arhsharbinger.com/wp-content/uploads/2019/01/aquaman-box-office-900x600.jpg"
   }
 ]
