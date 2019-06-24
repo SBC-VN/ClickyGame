@@ -3,6 +3,8 @@ import Modal from "./components/Modal";
 import PicCard from "./components/PicCard";
 import pictures from "./pictures.json";
 
+let displayPictures = pictures;
+
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
@@ -10,10 +12,9 @@ class App extends Component {
     showModal : false,
     modalMessage : ""
   };
+  myPictures = pictures;
 
   cardClicked = id => {
-    console.log("Card clicked",id);
-    console.log("state",this.state.clicked);
     if (this.state.clicked.includes(id)) {
       // Clicked on a card that was previously clicked.  Game over.
       console.log("Already clicked, game over");
@@ -23,9 +24,22 @@ class App extends Component {
       });
     }
     else {
-      console.log("new click!");
       let newClicked = this.state.clicked;
       newClicked.push(id);
+
+      // Randomize the cards for the next click.
+      let newArray = [];
+      console.log("Start pics",displayPictures);
+      while (displayPictures.length > 0) {
+        let rIndex = Math.floor(Math.random() * displayPictures.length);
+        console.log("Selection",rIndex);
+        console.log("Item",displayPictures[rIndex]);
+        newArray.push(displayPictures[rIndex]);
+        displayPictures.splice(rIndex,1)
+      }
+      displayPictures = newArray;
+      console.log("End pics",displayPictures);
+
       this.setState({ clicked : newClicked, 
         showModal : false, 
         modalMessage : ""
@@ -55,7 +69,7 @@ class App extends Component {
             {this.state.modalMessage}
         </Modal>
 
-        {pictures.map(picture => (
+        {displayPictures.map(picture => (
             <PicCard
               key={picture.id}
               id={picture.id}
