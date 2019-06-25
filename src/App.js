@@ -62,6 +62,9 @@ class App extends Component {
   render() {
     return (
       <div>
+        <div id="scorediv">
+          <h2>Score: {this.state.clicked.length}</h2>
+        </div>
         <Modal
         className="modal"
         show={this.state.showModal}
