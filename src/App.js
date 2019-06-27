@@ -1,15 +1,30 @@
 import React, { Component } from "react";
-import Modal from "./components/Modal";
+import ModalContents from "./components/ModalContents";
 import PicCard from "./components/PicCard";
 import pictures from "./pictures.json";
 
+import Modal from 'react-modal';
+
 let displayPictures = pictures;
+
+Modal.setAppElement('#root');
+
+const customStyles = {
+  content : {
+    top                   : '25%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     clicked : [],
-    showModal : false,
+    modalIsOpen : false,
     modalMessage : ""
   };
   myPictures = pictures;
@@ -18,8 +33,7 @@ class App extends Component {
     if (this.state.clicked.includes(id)) {
       // Clicked on a card that was previously clicked.  Game over.
       console.log("Already clicked, game over");
-      this.setState({ clicked : [], 
-                      showModal : true, 
+      this.setState({ modalIsOpen : true, 
                       modalMessage : "You already clicked that card.  Game over."
       });
     }
@@ -41,7 +55,7 @@ class App extends Component {
       console.log("End pics",displayPictures);
 
       this.setState({ clicked : newClicked, 
-        showModal : false, 
+        modalIsOpen : false, 
         modalMessage : ""
       });
     }
@@ -49,14 +63,22 @@ class App extends Component {
 
   openModalHandler = () => {
     this.setState({
-      showModal: true
+      clicked: this.state.clicked,
+      modalIsOpen: true,
+      modalMessage: this.state.modalMessage
     });
   }
 
   closeModalHandler = () => {
+    console.log("Close modal called");
     this.setState({
-      showModal: false
+      modalIsOpen: false,
+      modalMessage: ""
     });
+  }
+
+  afterOpenModal = () => {
+    console.log("Modal open");
   }
 
   render() {
@@ -66,10 +88,14 @@ class App extends Component {
           <h2>Score: {this.state.clicked.length}</h2>
         </div>
         <Modal
-        className="modal"
-        show={this.state.showModal}
-        close={this.closeModalHandler}>
-            {this.state.modalMessage}
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          style={customStyles}
+        >
+          <ModalContents 
+            closeModal={this.closeModalHandler}
+            modalMessage={this.state.modalMessage}
+          />
         </Modal>
 
         {displayPictures.map(picture => (
@@ -79,7 +105,7 @@ class App extends Component {
               name={picture.name}
               image={picture.image}
               cardClick={this.cardClicked}
-              show={!this.state.showModal}
+              show={true}
             />
         ))}
       </div>
