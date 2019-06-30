@@ -1,8 +1,15 @@
-img {
-  height: 225px;
-  width: 250px;
-}
+.game-image {
+  width: 400px;
+  height: 350px;
+  border: 5px;
+  border-color: aqua;
+  margin: 2% 10%;
+}    
 
 .img-container {
   display: inline-block;
+  height: 16%;
+  width: 16%;
+  position: static;
+  background-color: gray;
 }

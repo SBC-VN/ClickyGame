@@ -34,7 +34,7 @@ class App extends Component {
       // Clicked on a card that was previously clicked.  Game over.
       console.log("Already clicked, game over");
       this.setState({ modalIsOpen : true, 
-                      modalMessage : "You already clicked that card.  Game over."
+                      modalMessage : "Sorry, you already clicked that card. "
       });
     }
     else {
@@ -43,16 +43,12 @@ class App extends Component {
 
       // Randomize the cards for the next click.
       let newArray = [];
-      console.log("Start pics",displayPictures);
       while (displayPictures.length > 0) {
         let rIndex = Math.floor(Math.random() * displayPictures.length);
-        console.log("Selection",rIndex);
-        console.log("Item",displayPictures[rIndex]);
         newArray.push(displayPictures[rIndex]);
         displayPictures.splice(rIndex,1)
       }
       displayPictures = newArray;
-      console.log("End pics",displayPictures);
 
       this.setState({ clicked : newClicked, 
         modalIsOpen : false, 
@@ -72,6 +68,7 @@ class App extends Component {
   closeModalHandler = () => {
     console.log("Close modal called");
     this.setState({
+      clicked: [],
       modalIsOpen: false,
       modalMessage: ""
     });
@@ -91,6 +88,7 @@ class App extends Component {
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           style={customStyles}
+          contentLabel="Game over"
         >
           <ModalContents 
             closeModal={this.closeModalHandler}

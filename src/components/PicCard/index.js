@@ -6,7 +6,7 @@ function PicCard(props) {
   return (
       props.show ?
       <div className="img-container" onClick={() => props.cardClick(props.id)}>
-        <img alt={props.name} src={props.image} />
+        <img className="game-image" alt={props.name} src={props.image} />
       </div>
       : <span></span>
   );
